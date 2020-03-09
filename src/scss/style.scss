@@ -4,7 +4,7 @@
 .bg-image {
   background-image: url("../images/work-bg.jpg");
   filter: blur(8px);
-  height: 70vh;
+  height: 60vh;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -92,16 +92,76 @@ figure {
 .group-icon {
   margin-left: 20%;
 }
+
+.icon-adjust {
+  margin-bottom: -200px;
+}
+
+.horizontally {
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+}
 //info section ends
+
+//footer section starts
+
+.footer {
+  font-family: $primary-font-family;
+  letter-spacing: 1px;
+  background: $light-blue;
+
+  .contact-img {
+    width: 65%;
+  }
+
+  table {
+    text-align: center;
+  }
+
+  td {
+    border: none;
+    color: $black;
+
+    img {
+      width: 8%;
+      margin-right: 20px;
+    }
+  }
+
+  .social-icons {
+    text-align: center;
+    padding: 130px 0 0 0;
+
+    a {
+      padding-right: 15px;
+    }
+    img {
+      width: 10%;
+    }
+  }
+}
+
+//footer section ends
 
 //media queries
 @media (max-width: 768px) {
+  .icon {
+    width: 25%;
+  }
+  .css-width {
+    width: 18%;
+  }
   .logo {
     width: 50% !important;
   }
   .carousel-image-2,
   .carousel-image-3 {
     height: 850px;
+  }
+
+  .contact-img {
+    width: 100% !important;
   }
 }
 

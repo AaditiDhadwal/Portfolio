@@ -3,6 +3,7 @@ import "../scss/style.scss"
 import Header from "../components/Header"
 import Info from "../components/Info"
 import Skills from "../components/Skills"
+import Footer from "../components/Footer"
 
 export default function Index() {
   return (
@@ -10,6 +11,7 @@ export default function Index() {
       <Header />
       <Info />
       <Skills />
+      <Footer />
     </>
   )
 }

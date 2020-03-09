@@ -15,43 +15,54 @@ import netlify from "../images/netlify.png"
 export default function Skills() {
   return (
     <div className="mt-5 mb-5">
-      <marquee scrollamount="25" behavior="scroll">
-        <img src={react} alt="react" className="img-fluid redux mr-5" />
-        <img src={redux} alt="redux" className="img-fluid redux mt-5 pt-3" />
+      <marquee height="300px" scrollamount="25">
+        <img src={react} alt="react" className="img-fluid redux mr-5 icon" />
+        <img
+          src={redux}
+          alt="redux"
+          className="img-fluid redux icon icon-adjust"
+        />
         <img
           src={js}
           alt="js"
-          className="img-fluid rounded-circle redux ml-5"
+          className="img-fluid rounded-circle redux ml-5 icon"
         />
         <img
           src={gatsby}
           alt="gatsby"
-          className="img-fluid redux mt-5 pt-3 ml-5"
+          className="img-fluid redux ml-5 icon icon-adjust"
         />
-        <img src={styled} alt="styled" className="img-fluid redux ml-5" />
+        <img src={styled} alt="styled" className="img-fluid redux ml-5 icon" />
 
-        <img src={html} alt="html" className="img-fluid redux group-icon" />
+        <img
+          src={html}
+          alt="html"
+          className="img-fluid redux group-icon icon"
+        />
         <img
           src={css}
           alt="css"
-          className="img-fluid css-width mt-5 pt-3 ml-5"
+          className="img-fluid css-width ml-5 icon-adjust"
         />
-
-        <img src={git} alt="git" className="img-fluid git-width group-icon" />
+        <img
+          src={git}
+          alt="git"
+          className="img-fluid git-width group-icon icon"
+        />
         <img
           src={strapi}
           alt="strapi"
-          className="img-fluid git-width rounded-circle mt-5 pt-3 ml-5"
+          className="img-fluid git-width rounded-circle  ml-5 icon icon-adjust"
         />
         <img
           src={heroku}
           alt="heroku"
-          className="img-fluid git-width rounded-circle mt-5 pt-3 ml-5"
+          className="img-fluid git-width rounded-circle  ml-5 icon"
         />
         <img
           src={netlify}
           alt="netlify"
-          className="img-fluid git-width mt-5 pt-3 ml-5"
+          className="img-fluid git-width  ml-5 icon icon-adjust"
         />
       </marquee>
     </div>
