@@ -18,7 +18,7 @@ body {
   .logo {
   border: ${props =>
     props.theme.mode === "dark" ? "10px solid #0beadc0d " : ""};
-}
+ }
 .carousel-image-1,
 .carousel-image-2,
 .carousel-image-3 {
@@ -30,9 +30,17 @@ body {
 `
 
 export default function Header() {
-  localStorage.setItem("theme", localStorage.getItem("theme") || "light")
+  if (typeof window === Object) {
+    window.localStorage.setItem(
+      "theme",
+      window.localStorage.getItem("theme") || "light"
+    )
+  }
   const [theme, setTheme] = useState({
-    mode: localStorage.getItem("theme") || "light",
+    mode:
+      typeof window === Object
+        ? window.localStorage.getItem("theme") || "light"
+        : "",
   })
 
   function saveTheme() {
@@ -45,12 +53,16 @@ export default function Header() {
       <GlobalStyle />
       <>
         <div className="bg-image"></div>
-        <label className="switch m-0 disableBlur" htmlFor="checkbox">
+        <label className="switch m-0" htmlFor="checkbox">
           <input
             type="checkbox"
             id="checkbox"
             onClick={() => saveTheme()}
-            checked={localStorage.getItem("theme") === "dark"}
+            checked={
+              typeof window === Object
+                ? localStorage.getItem("theme") === "dark"
+                : ""
+            }
             readOnly
           />
           <span className="slider round" />
