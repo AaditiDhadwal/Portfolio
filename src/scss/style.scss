@@ -107,7 +107,6 @@ figure {
 //footer section starts
 
 .footer {
-  font-family: $primary-font-family;
   letter-spacing: 1px;
   background: $light-blue;
 
@@ -144,6 +143,60 @@ figure {
 
 //footer section ends
 
+//theme section starts
+
+.switch {
+  position: relative;
+  width: 80px;
+  height: 0;
+  bottom: 370px;
+  float: right;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 48px;
+  left: 4px;
+  bottom: 4px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider:before {
+  content: "";
+  background-image: url("../images/sun.svg");
+  background-size: 40px;
+  background-repeat: no-repeat;
+}
+
+input + .slider:before {
+  content: "";
+  background: url("../images/moon.svg");
+  background-size: 40px;
+  background-repeat: no-repeat;
+}
+//theme section ends
+
 //media queries
 @media (max-width: 768px) {
   .icon {
@@ -175,7 +228,7 @@ figure {
   }
   .carousel-image-2,
   .carousel-image-3 {
-    height: 1150px;
+    height: 1230px;
   }
   .carousel-image-1 {
     height: 650px;

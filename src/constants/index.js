@@ -15,7 +15,7 @@ export const ContactInfo = [
     img: location,
   },
   {
-    label: "https://portfolio.netlify.com",
+    label: "https://aaditi-dhadwal.netlify.com",
     img: link,
   },
 ]

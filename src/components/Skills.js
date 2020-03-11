@@ -1,13 +1,14 @@
 import React from "react"
 
-import react from "../images/react.png"
+import react from "../images/react.svg"
 import redux from "../images/redux.png"
 import js from "../images/js.png"
+import angular from "../images/angular.svg"
 import gatsby from "../images/gatsby.png"
 import styled from "../images/styled.jpeg"
 import html from "../images/html.png"
 import css from "../images/css.png"
-import git from "../images/git.png"
+import git from "../images/github.svg"
 import strapi from "../images/strapi.jpg"
 import heroku from "../images/heroku.png"
 import netlify from "../images/netlify.png"
@@ -28,11 +29,20 @@ export default function Skills() {
           className="img-fluid rounded-circle redux ml-5 icon"
         />
         <img
-          src={gatsby}
-          alt="gatsby"
+          src={angular}
+          alt="angular"
           className="img-fluid redux ml-5 icon icon-adjust"
         />
-        <img src={styled} alt="styled" className="img-fluid redux ml-5 icon" />
+        <img
+          src={gatsby}
+          alt="gatsby"
+          className="img-fluid rounded-circle redux ml-5 icon"
+        />
+        <img
+          src={styled}
+          alt="styled"
+          className="img-fluid redux ml-5 icon  icon-adjust"
+        />
 
         <img
           src={html}
@@ -57,7 +67,7 @@ export default function Skills() {
         <img
           src={heroku}
           alt="heroku"
-          className="img-fluid git-width rounded-circle  ml-5 icon"
+          className="img-fluid git-width  ml-5 icon"
         />
         <img
           src={netlify}
